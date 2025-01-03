@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ratul's Fan Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f4f4f4;
+    }
+
+    form {
+      max-width: 500px;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      background-color: white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    form div {
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input, select, textarea, button {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+  </style>
+</head>
+<body>
+  <h1 style="text-align: center;">Become a Fan of Ratul</h1>
+  <form action="#" method="POST">
+    <div>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    </div>
+    <div>
+      <label for="age">Age</label>
+      <input type="number" id="age" name="age" placeholder="Enter your age" required>
+    </div>
+    <div>
+      <label for="gender">Gender</label>
+      <select id="gender" name="gender" required>
+        <option value="">Select your gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+    </div>
+    <div>
+      <label for="address">Address</label>
+      <input type="text" id="address" name="address" placeholder="Enter your address" required>
+    </div>
+    <div>
+      <label for="fan-realization">When did you realize that you are a fan of Ratul?</label>
+      <textarea id="fan-realization" name="fan_realization" rows="4" placeholder="Write your story here" required></textarea>
+    </div>
+    <div>
+      <label for="reason">Why do you want to be my follower?</label>
+      <textarea id="reason" name="reason" rows="4" placeholder="Write your reasons here" required></textarea>
+    </div>
+    <div>
+      <button type="submit">Submit</button>
+    </div>
+  </form>
+</body>
+</html>
